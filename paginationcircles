@@ -1,0 +1,15 @@
+<?php
+$pages_count=3;
+$cur_page=1;?>
+<ul class="pagination__control">
+    <?php
+    while ($cur_page<=){
+        ?>
+        <li class="pagination__item">
+            <a href="?page=<?$cur_page; ?>">
+                <?=$cur_page; ?>
+            </a>
+        </li>
+        <?php
+        $cur_page++;}?>
+</ul>
