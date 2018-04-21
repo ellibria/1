@@ -1,0 +1,20 @@
+<?php
+$categories=['A','B','C','D','E'];
+?>
+<div class="navigation__item">
+    <h3 class="navigation__title navigation__title--list">Categories</h3>
+
+    <nav class="navigation__links">
+        <?php
+        $index=0;
+        $num=count($categories);
+
+        while ($index<$num){
+            $cat=$categories[$index];
+            print ('<a href="#">'.$cat.'</a>');
+
+            $index=$index+1;
+        }
+        ?>
+    </nav>
+</div>
